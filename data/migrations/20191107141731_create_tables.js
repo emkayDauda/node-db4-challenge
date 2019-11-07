@@ -27,7 +27,7 @@ exports.up = function(knex) {
         .inTable("ingredients");
 
       table
-        .integer("quantity")
+        .decimal("quantity")
         .unsigned()
         .notNullable();
     })
