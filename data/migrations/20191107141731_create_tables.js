@@ -38,14 +38,20 @@ exports.up = function(knex) {
         .integer("recipe_id")
         .references("recipe_id")
         .inTable("recipes");
+
+      table
+        .integer("step_number")
+        .notNullable()
+        .unsigned();
+
       table.string("instruction");
     });
 };
 
 exports.down = function(knex) {
-    return knex.schema
-    .dropTableIfExists('steps')
-    .dropTableIfExists('measurements')
-    .dropTableIfExists('ingredients')
-    .dropTableIfExists('recipes')
+  return knex.schema
+    .dropTableIfExists("steps")
+    .dropTableIfExists("measurements")
+    .dropTableIfExists("ingredients")
+    .dropTableIfExists("recipes");
 };
