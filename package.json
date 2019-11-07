@@ -1,0 +1,37 @@
+{
+  "name": "db4-challenge",
+  "version": "1.0.0",
+  "description": "Random description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emkayDauda/node-db4-challenge.git"
+  },
+  "keywords": [
+    "node",
+    "JavaScript",
+    "sqlite3",
+    "database"
+  ],
+  "author": "Maaruf Dauda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emkayDauda/node-db4-challenge/issues"
+  },
+  "homepage": "https://github.com/emkayDauda/node-db4-challenge#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.1",
+    "sqlite3": "^4.1.0"
+  }
+}
